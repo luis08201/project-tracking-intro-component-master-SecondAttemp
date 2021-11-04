@@ -1,0 +1,53 @@
+@import "../resources/resource";
+
+.header {
+  &::after {
+    width: 60%;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__nav {
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    gap:70px;
+  }
+
+  &__menu {
+    flex-direction: row;
+    width: auto;
+    gap: 30px;
+  }
+
+  &__login {
+    width: auto;
+    border-top: none;
+
+    &--cta {
+      font-size: 15px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+  }
+
+  /* HOME */
+
+  &__home {
+      gap:30px;   
+
+    &--photo {
+      right: -85%;
+      width: 200%;
+      height: 320px;
+    }
+  }
+}

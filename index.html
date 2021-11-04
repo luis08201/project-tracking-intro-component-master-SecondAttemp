@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width:768px)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width:1024px)">
+  <link rel="stylesheet" href="css/aos.css">
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <header class="header">
+    <div class="header__main">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo--link">
+          <img src="img/logo.svg" alt="" class="header__photo">
+        </a>
+      </div>
+      <div class="header__toggle" id="toggleBtn"></div>
+      <nav class="header__nav" id="nav">
+        <ul class="header__menu">
+          <li class="header__list">
+            <a href="#" class="header__link">product </a>
+          </li>
+          <li class="header__list">
+            <a href="#" class="header__link">features </a>
+          </li>
+          <li class="header__list">
+            <a href="#" class="header__link"> pricing</a>
+          </li>
+        </ul>
+        <div class="header__login">
+          <a href="#" class="header__login--cta">login</a>
+        </div>
+      </nav>
+    </div>
+    <div class="header__home">
+      <figure class="header__home--picture">
+        <img src="img/illustration-devices.svg" alt="" class="header__home--photo" data-aos="fade-left"  data-aos-duration="1500">
+      </figure>
+      <article class="header__home--article" data-aos="fade-right" data-aos-duration="1500">
+        <h2 class="header__home--secondheading">
+          <span>new</span>
+          monograph dashboard
+        </h2>
+        <h1 class="header__home--firstheading">
+          powerful insights into your team
+        </h1>
+        <p class="header__home--paragraph">
+          Project planning and time tracking for agile teams
+        </p>
+        <div class="header__home--button">
+          <a href="#" class="header__home--btn">schedule a demo</a>
+            <a href="#" class="header__home--cta">to see a preview</a>
+        </div>
+      </article>
+    </div>
+  </header>
+
+
+
+<script src="js/toggle.js"></script>
+<script src="js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

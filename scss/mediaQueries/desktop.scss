@@ -1,0 +1,68 @@
+@import "../resources/resource";
+
+.header {
+
+  &::after {
+    width: 53%;
+    height: 380px;
+  }
+
+  &__home {
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "article picture";
+
+    &--picture {
+      grid-area: picture;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+
+    &--article {
+      grid-area: article;
+      position: relative;
+      z-index: 10;
+      align-items: flex-start;
+    }
+
+    &--firstheading {
+      font-size: 52px;
+    }
+
+    &--secondheading {
+      font-size: 24px;
+
+      & span {
+        padding: 4px 12px;
+      }
+    }
+
+    &--button {
+      gap: 25px;
+    }
+
+    &--btn {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    &--photo {
+      top: -100px;
+      right: -90%;
+      width: 200%;
+      height: 440px;
+    }
+
+    &--cta {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &::after {
+      width: 48%;
+    }
+  } 
+}
